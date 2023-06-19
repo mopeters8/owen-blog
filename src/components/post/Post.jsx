@@ -1,31 +1,29 @@
-import './post.css'
+import "./post.css";
+import { Link } from "react-router-dom";
 
-export default function Post() {
+export default function Post({ post }) {
+  const PF = "http://localhost:4000/images/";
+
   return (
-    <div className='post'>
-        <img 
-            className='postImg'
-            src="https://www.rd.com/wp-content/uploads/2021/03/GettyImages-1133605325-scaled-e1617227898456.jpg"
-            alt = ""
-        />
+    <div className="post">
+      {post.photo && <img className="postImg" src={PF + post.photo} alt="" />}
 
-        <div className="postInfo">
-            <div className="postCats">
-                <span className="postCat">Music</span>
-                <span className="postCat">Life</span>
-            </div>
-            <span className="postTitle">
-                This is example post title!
-            </span>
-            <hr/>
-            <span className="postDate">1 hour ago!</span>
+      <div className="postInfo">
+        <div className="postCats">
+          {post.categories.map((c) => (
+            <span className="postCat">{c.name}</span>
+          ))}
         </div>
-        <p className='postDesc'> 
-            This is some flavor text, sort of as a test i'd say! I am going to make This
-            text extremely long and say a lot of clutter just because i gotta test some things.
-            This makes no sense at all. I have to make it even longer now.  I have to make it even longer now.
-            I have to make it even longer now.  I have to make it even longer now.
-        </p>
+        <Link to={`/post/${post._id}`} className="link">
+          <span className="postTitle">{post.title}</span>
+        </Link>
+
+        <hr />
+        <span className="postDate">
+          {new Date(post.createdAt).toDateString()}
+        </span>
+      </div>
+      <p className="postDesc">{post.desc}</p>
     </div>
-  )
+  );
 }
