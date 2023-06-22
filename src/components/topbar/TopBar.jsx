@@ -47,7 +47,11 @@ export default function TopBar() {
       <div className="topRight">
         {user ? (
           <Link to="/settings">
-            <img className="topImg" src={PF + user.profilePic} alt="" />
+            <img
+              className="topImg"
+              src={PF + user.profilePic}
+              alt="https://img.freepik.com/free-icon/user_318-286823.jpg"
+            />
           </Link>
         ) : (
           <ul className="topList">

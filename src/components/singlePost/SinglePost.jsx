@@ -14,12 +14,17 @@ export default function SinglePost() {
   const [post, setPost] = useState({});
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
+  const [author, setAuthor] = useState("");
   const [updateMode, setUpdateMode] = useState(false);
 
   useEffect(() => {
     const getPost = async () => {
       const res = await axios.get("/posts/" + path);
+      console.log(res);
       setPost(res.data);
+
+      const post_userId = await axios.get("/users/" + res.data.userId);
+      setAuthor(post_userId.data.username);
       setTitle(res.data.title);
       setDesc(res.data.desc);
     };
@@ -63,7 +68,7 @@ export default function SinglePost() {
         ) : (
           <h1 className="singlePostTitle">
             {title}
-            {post.username === user?.username && (
+            {post.userId === user?._id && (
               <div className="singlePostEdit">
                 <i
                   className="singlePostIcon fa-regular fa-pen-to-square"
@@ -80,8 +85,8 @@ export default function SinglePost() {
         <div className="singlePostInfo">
           <span className="singlePostAuthor">
             Author:
-            <Link to={`/?user=${post.username}`} className="link">
-              <b> {post.username}</b>
+            <Link to={`/?user=${author}`} className="link">
+              <b> {author}</b>
             </Link>
           </span>
           <span className="singlePostDate">

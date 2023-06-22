@@ -13,6 +13,7 @@ export default function Write() {
     e.preventDefault();
     const newPost = {
       username: user.username,
+      userId: user._id,
       title,
       desc,
     };

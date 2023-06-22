@@ -1,7 +1,7 @@
 import "./settings.css";
 import Sidebar from "../../components/sidebar/Sidebar";
 import { Context } from "../../context/Context";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import axios from "axios";
 
 export default function Settings() {
@@ -9,20 +9,27 @@ export default function Settings() {
   const PF = "http://localhost:4000/images/";
 
   const [file, setFile] = useState(null);
-  const [username, setUsername] = useState("");
+  const [username, setUsername] = useState(user.username);
   const [password, setPassword] = useState("");
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState(user.email);
   const [success, setSuccess] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     dispatch({ type: "UPDATE_START" });
+
+    if (email === "") {
+      console.log(email);
+      setEmail(user.email);
+    }
+
     const updatedUser = {
       userId: user._id,
       username,
       email,
       password,
     };
+    console.log(updatedUser);
     if (file) {
       const data = new FormData();
       const filename = Date.now() + file.name;
