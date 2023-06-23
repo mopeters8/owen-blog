@@ -1,7 +1,7 @@
 import "./settings.css";
 import Sidebar from "../../components/sidebar/Sidebar";
 import { Context } from "../../context/Context";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import axios from "axios";
 
 export default function Settings() {
@@ -11,24 +11,26 @@ export default function Settings() {
   const [file, setFile] = useState(null);
   const [username, setUsername] = useState(user.username);
   const [password, setPassword] = useState("");
+  const [currPassword, setcurrPassword] = useState("");
   const [email, setEmail] = useState(user.email);
   const [success, setSuccess] = useState(false);
+
+  //TO Depricate. I would prefer ID's
+  const [oldUsername] = useState(user.username);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     dispatch({ type: "UPDATE_START" });
 
-    if (email === "") {
-      console.log(email);
-      setEmail(user.email);
-    }
-
     const updatedUser = {
       userId: user._id,
       username,
+      oldUsername,
       email,
       password,
+      currPassword,
     };
+
     console.log(updatedUser);
     if (file) {
       const data = new FormData();
@@ -63,6 +65,7 @@ export default function Settings() {
           <div className="settingsPP">
             <img
               src={file ? URL.createObjectURL(file) : PF + user.profilePic}
+              alt=""
             />
             <label htmlFor="fileInput">
               <i className="settingsPPIcon fa-regular fa-user"></i>
@@ -86,10 +89,15 @@ export default function Settings() {
             placeholder={user.email}
             onChange={(e) => setEmail(e.target.value)}
           ></input>
-          <label>Password</label>
+          <label>New Password</label>
           <input
             type="password"
             onChange={(e) => setPassword(e.target.value)}
+          ></input>
+          <label>Current Password</label>
+          <input
+            type="password"
+            onChange={(e) => setcurrPassword(e.target.value)}
           ></input>
           <button className="settingsSubmit" type="submit">
             Update
@@ -99,6 +107,13 @@ export default function Settings() {
               style={{ color: "green", textAlign: "center", marginTop: "20px" }}
             >
               Profile has been updated.
+            </span>
+          )}
+          {!success && (
+            <span
+              style={{ color: "red", textAlign: "center", marginTop: "20px" }}
+            >
+              Incorrect credentials.
             </span>
           )}
         </form>
