@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import "react-bootstrap/dist/react-bootstrap.min.js";
 import TopBar from "./components/topbar/TopBar";
 import Home from "./pages/home/home";
 import Login from "./pages/login/Login";

@@ -1,31 +1,71 @@
 .header {
-    margin-top: 60px;
+  background-color: darkgrey;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
 
+.header > * {
+  width: calc(100% / 3);
+}
+
+.logo {
+  max-width: 300px;
+  object-fit: contain;
+}
+
+.bioField {
+  padding-right: 5%;
+  width: 50%;
+  height: auto;
+  margin-left: 5%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.bioText {
+  background-color: rgb(217, 217, 217);
+  padding: 10px;
+  color: black;
+  border: 3px solid black;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+#bioTextHead {
+  font-weight: bold;
+  font-size: larger;
 }
 
 .headerTitles {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Roboto', sans-serif;
-    color: 444;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  color: 444;
 }
 
 .headerTitleSm {
-    position: absolute;
-    top: 18%;
-    font-size: 20px;
+  position: relative;
+  top: 16%;
+  font-size: 50px;
 }
 
 .headerTitleLg {
-    position: absolute;
-    top: 20%;
-    font-size: 100px;
+  position: relative;
+  top: 14%;
+  font-size: 125px;
 }
 
 .headerImg {
-    width: 100%;
-    height: 450px;
-    margin-top: 80px;
-    object-fit: cover;
+  width: 100%;
+  height: 450px;
+  margin-top: 80px;
+  object-fit: cover;
+}
+
+.botHR {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border: 2px solid black;
 }

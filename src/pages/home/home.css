@@ -1,3 +1,22 @@
 .home {
-    display: flex;
+  margin-top: 20px;
+  display: flex;
+}
+
+.title > hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.sectionTitle {
+  font-size: 30px;
+  margin-top: 30px;
+  margin-left: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }

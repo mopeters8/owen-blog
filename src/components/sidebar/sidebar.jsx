@@ -18,7 +18,8 @@ export default function Sidebar() {
       <div className="sidebarItem">
         <span className="sidebarTitle">ABOUT ME</span>
         <img
-          src="https://images.pexels.com/photos/5058917/pexels-photo-5058917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          className="sidebarImg"
+          src="https://drive.google.com/uc?export=view&id=1wNuqXOVr_kSp2sQOdP2p66BsUasO4bK2"
           alt=""
         />
         <p> Hello, this is only temporary!</p>
@@ -26,11 +27,12 @@ export default function Sidebar() {
       <div className="sidebarItem">
         <span className="sidebarTitle">CATEGORIES</span>
         <ul className="sidebarList">
-          {cats.map((c) => (
+          * UNDER CONSTRUCTION *
+          {/* {cats.map((c) => (
             <Link to={`/?cat=${c.name}`} className="link">
               <li className="sidebarListItem">{c.name}</li>
             </Link>
-          ))}
+          ))} */}
         </ul>
       </div>
       <div className="sidebarItem">
