@@ -1,0 +1,14 @@
+.aboutPage {
+  background-color: rgb(27, 27, 27);
+}
+
+.bioImg {
+  width: 275px;
+  border: 1px grey solid;
+  border-radius: 50%;
+}
+
+.biography {
+  display: flex;
+  flex-direction: row;
+}
