@@ -1,14 +1,56 @@
 .aboutPage {
   background-color: rgb(27, 27, 27);
+  height: 1080px;
+  /* this is so bad ^ */
+
+  padding-top: 2%;
+}
+
+/* Rounded border */
+hr.rounded {
+  border-top: 4px solid grey;
+  border-radius: 5px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
 }
 
 .bioImg {
+  text-align: center;
   width: 275px;
+  height: 275px;
   border: 1px grey solid;
   border-radius: 50%;
 }
 
-.biography {
-  display: flex;
-  flex-direction: row;
+.biographyText {
+  padding-top: 50px;
+}
+
+.bioIntro {
+  color: silver;
+}
+
+.bioName {
+  position: absolute;
+  top: 25%;
+  font-size: 60px;
+  color: rgb(255, 226, 63);
+}
+
+.bioSubtext {
+  position: absolute;
+  top: 50%;
+  font-size: 45px;
+  color: rgb(142, 121, 0);
+}
+
+.bioDesc {
+  color: rgb(170, 152, 51);
+  padding-top: 18%;
+}
+
+.bioButtons {
+  text-align: center;
 }
