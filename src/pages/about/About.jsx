@@ -1,4 +1,5 @@
 import "./about.css";
+import Project from "../../components/project/Project";
 
 export default function About() {
   //great reference
@@ -43,6 +44,9 @@ export default function About() {
 
       <div className="biography"></div>
       <div className="bio">{/* <!-- emphasis on M and O --> */}</div>
+      <div className="Projects">
+        <Project></Project>
+      </div>
     </div>
   );
 }
