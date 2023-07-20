@@ -31,10 +31,10 @@ export default function About() {
         </div>
         <div class="row bioButtons">
           <div class="col">
-            <button type="button" class="btn btn-outline-secondary">
+            <button type="button" class="btn btn-outline-success mr-3">
               View Portfolio
             </button>
-            <button type="button" class="btn btn-outline-secondary">
+            <button type="button" class="btn btn-outline-success">
               View Rest of Site
             </button>
           </div>

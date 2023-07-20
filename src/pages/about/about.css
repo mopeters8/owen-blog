@@ -1,9 +1,7 @@
 .aboutPage {
   background-color: rgb(49, 49, 49);
-  height: 1080px;
   /* this is so bad ^ */
-
-  padding-top: 2%;
+  height: 250vh;
 }
 
 /* Rounded border */
@@ -18,39 +16,44 @@ p {
 
 .bioImg {
   text-align: center;
-  width: 275px;
-  height: 275px;
+  width: 255px;
+  height: 255px;
   border: 1px grey solid;
   border-radius: 50%;
 }
 
 .biographyText {
-  padding-top: 50px;
+  /* padding-top: 10px; */
 }
 
 .bioIntro {
   color: silver;
+  line-height: 50px;
 }
 
 .bioName {
-  position: absolute;
-  top: 25%;
   font-size: 60px;
+  line-height: 30px;
   color: rgb(255, 226, 63);
 }
 
 .bioSubtext {
-  position: absolute;
-  top: 50%;
+  line-height: 30px;
   font-size: 45px;
   color: rgb(142, 121, 0);
 }
 
 .bioDesc {
+  margin-top: 30px;
   color: rgb(170, 152, 51);
-  padding-top: 18%;
 }
 
 .bioButtons {
   text-align: center;
+}
+
+.bioButtons .btn {
+  background-color: gold;
+  border-color: black;
+  color: black;
 }

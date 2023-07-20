@@ -26,7 +26,7 @@ export default function Post({ post }) {
   //   );
 
   return (
-    <div>
+    <>
       <div class="content">
         <div class="my_card">
           <img
@@ -39,6 +39,10 @@ export default function Post({ post }) {
             ducimus animi numquam earum sed aut voluptatum vel velit. Placeat
             harum laboriosam iure sed assumenda sequi minima distinctio dolorum
             ipsam magnam!
+            <br></br>
+            <Link className="link" to="/">
+              <i class="icon fa-brands fa-github fa-2xl"></i>
+            </Link>
           </p>
         </div>
         <div class="my_card">
@@ -52,6 +56,10 @@ export default function Post({ post }) {
             ducimus animi numquam earum sed aut voluptatum vel velit. Placeat
             harum laboriosam iure sed assumenda sequi minima distinctio dolorum
             ipsam magnam!
+            <br></br>
+            <Link className="link" to="/">
+              <i class="icon fa-brands fa-github fa-2xl"></i>
+            </Link>
           </p>
         </div>
         <div class="my_card">
@@ -65,6 +73,10 @@ export default function Post({ post }) {
             ducimus animi numquam earum sed aut voluptatum vel velit. Placeat
             harum laboriosam iure sed assumenda sequi minima distinctio dolorum
             ipsam magnam!
+            <br></br>
+            <Link className="link" to="/">
+              <i class="icon fa-brands fa-github fa-2xl"></i>
+            </Link>
           </p>
         </div>
         <div class="my_card">
@@ -78,6 +90,10 @@ export default function Post({ post }) {
             ducimus animi numquam earum sed aut voluptatum vel velit. Placeat
             harum laboriosam iure sed assumenda sequi minima distinctio dolorum
             ipsam magnam!
+            <br></br>
+            <Link className="link" to="/">
+              <i class="icon fa-brands fa-github fa-2xl"></i>
+            </Link>
           </p>
         </div>
         <div class="my_card">
@@ -91,6 +107,10 @@ export default function Post({ post }) {
             ducimus animi numquam earum sed aut voluptatum vel velit. Placeat
             harum laboriosam iure sed assumenda sequi minima distinctio dolorum
             ipsam magnam!
+            <br></br>
+            <Link className="link" to="/">
+              <i class="icon fa-brands fa-github fa-2xl"></i>
+            </Link>
           </p>
         </div>
         <div class="my_card">
@@ -104,9 +124,13 @@ export default function Post({ post }) {
             ducimus animi numquam earum sed aut voluptatum vel velit. Placeat
             harum laboriosam iure sed assumenda sequi minima distinctio dolorum
             ipsam magnam!
+            <br></br>
+            <Link className="link" to="/">
+              <i class="icon fa-brands fa-github fa-2xl"></i>
+            </Link>
           </p>
         </div>
       </div>
-    </div>
+    </>
   );
 }

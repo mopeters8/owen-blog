@@ -1,31 +1,16 @@
-
-@media screen and (max-width: 767px) {
-  .wrapper {
-     height: 700px;
-  }
-}
-
 .content {
   max-width: auto;
   width: 100%;
-  padding: 0 4%;
-  padding-top: 50px;
-  margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap:wrap;
   justify-content: center;
-
+//   padding-bottom: ;
+   //
 //this caused it to me smushed to the left side.
 //   align-items: center;
 }
 
-@media screen and (max-width: 767px) {
-  .content {
-     padding-top: 300px;
-     flex-direction: column;
-  }
-}
 
 .my_card {
   width: 100%;
@@ -50,27 +35,6 @@
   flex-direction: column;
   cursor: pointer;
   transition: all 0.3s ease;
-}
-
-.icon {
-  margin: 0 auto;
-  width: 100%;
-  height: 80px;
-  max-width: 80px;
-  background: linear-gradient(
-     90deg,
-     #ff7e7e 0%,
-     #ff4848 40%,
-     rgba(0, 0, 0, 0.28) 60%
-  );
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  transition: all 0.8s ease;
-  background-position: 0px;
-  background-size: 200px;
 }
 
 .material-icons.md-18 {
@@ -123,7 +87,8 @@
 
 
 .my_card:hover {
-  height: 500px;
+   //not liking this.
+  height: 540px;
 }
 
 .my_card:hover .text {
@@ -132,15 +97,23 @@
 //   max-height: 200px;
 }
 
-.my_card:hover .icon {
-  background-position: -120px;
-  transition: all 0.3s ease;
-}
+.my_card .btn {
+   width: 30%;
+   // margin: 0 auto;
+   text-align: center;
+   margin-top: 15px;
+   color: white;
+   letter-spacing: 2px;
+   opacity: 0;
+   transition: all 0.5s ease;
+ }
 
-.my_card:hover .icon i {
-  background: linear-gradient(90deg, #ff7e7e, #ff4848);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 1;
+.my_card:hover .btn {
+   transition: all 0.5s ease;
+   opacity: 1;
+ }
+
+.my_card:hover .icon {
+  margin-top: 30px;
   transition: all 0.3s ease;
 }
