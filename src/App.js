@@ -7,6 +7,7 @@ import Register from "./pages/register/Register";
 import Settings from "./pages/settings/Settings";
 import Single from "./pages/single/Single";
 import Write from "./pages/write/Write";
+import FadeInSection from "./components/effects/FadeInSection.jsx";
 import { BrowserRouter as Router, Routes, Link, Route } from "react-router-dom";
 import { Context } from "./context/Context";
 import About from "./pages/about/About.jsx";

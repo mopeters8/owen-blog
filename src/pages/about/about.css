@@ -1,7 +1,12 @@
 .aboutPage {
   background-color: rgb(49, 49, 49);
   /* this is so bad ^ */
-  height: 250vh;
+  height: 300vh;
+  padding-top: 15px;
+}
+
+.container-xl {
+  margin-bottom: 30%;
 }
 
 /* Rounded border */
@@ -12,6 +17,23 @@ hr.rounded {
 
 p {
   font-family: "Roboto", sans-serif;
+  text-shadow: 1px 2px 3px black;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.biography {
+  position: relative;
+  color: white;
+  font-size: 25px;
+  margin-bottom: 10%;
+}
+
+.bioHeadshot {
+  padding-top: 25px;
 }
 
 .bioImg {
@@ -22,38 +44,74 @@ p {
   border-radius: 50%;
 }
 
-.biographyText {
-  /* padding-top: 10px; */
-}
-
 .bioIntro {
   color: silver;
-  line-height: 50px;
+  line-height: 60px;
+  position: relative;
+  top: 80px;
+  font-size: xx-large;
 }
 
 .bioName {
-  font-size: 60px;
-  line-height: 30px;
+  font-size: 90px;
+  position: relative;
+  top: 100px;
+  line-height: 20px;
   color: rgb(255, 226, 63);
 }
 
 .bioSubtext {
-  line-height: 30px;
-  font-size: 45px;
+  line-height: 35px;
+  position: relative;
+  top: 140px;
+  font-size: 70px;
   color: rgb(142, 121, 0);
 }
 
 .bioDesc {
+  font-size: 35px;
+  position: relative;
+  top: 150px;
   margin-top: 30px;
   color: rgb(170, 152, 51);
 }
 
 .bioButtons {
   text-align: center;
+  position: relative;
+  top: 250px;
 }
 
 .bioButtons .btn {
   background-color: gold;
   border-color: black;
   color: black;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeInUp-animation {
+  animation: 1.5s fadeInUp;
+}
+
+.fadeIn-animation {
+  animation: 7s fadeIn;
 }
