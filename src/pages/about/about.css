@@ -1,0 +1,119 @@
+.aboutPage {
+  background-color: rgb(49, 49, 49);
+  /* this is so bad ^ */
+  height: 300vh;
+  padding-top: 15px;
+}
+
+.container-xl {
+  margin-bottom: 600px;
+}
+
+/* Rounded border */
+hr.rounded {
+  border-top: 4px solid grey;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.biography {
+  position: relative;
+  color: rgb(255, 226, 63);
+  font-size: 25px;
+  margin-bottom: 10%;
+}
+
+.bioHeadshot {
+  padding-top: 25px;
+}
+
+.bioImg {
+  text-align: center;
+  width: 255px;
+  height: 255px;
+  border: 1px grey solid;
+  border-radius: 50%;
+}
+
+.bioIntro {
+  color: silver;
+  line-height: 60px;
+  position: relative;
+  top: 80px;
+  font-size: xx-large;
+}
+
+.bioName {
+  font-size: 90px;
+  position: relative;
+  top: 100px;
+  line-height: 20px;
+  color: rgb(255, 226, 63);
+}
+
+.bioSubtext {
+  line-height: 35px;
+  position: relative;
+  top: 140px;
+  font-size: 70px;
+  color: rgb(142, 121, 0);
+}
+
+.bioDesc {
+  font-size: 35px;
+  position: relative;
+  top: 150px;
+  margin-top: 30px;
+  color: rgb(170, 152, 51);
+}
+
+.bioButtons {
+  text-align: center;
+  position: relative;
+  top: 250px;
+}
+
+.bioButtons .btn {
+  background-color: gold;
+  border-color: black;
+  color: black;
+}
+
+.biographyTravel {
+  display: block;
+  position: relative;
+  top: -60px;
+  visibility: hidden;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeInUp-animation {
+  animation: 1.5s fadeInUp;
+}
+
+.fadeIn-animation {
+  animation: 7s fadeIn;
+}
