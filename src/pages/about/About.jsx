@@ -3,6 +3,8 @@ import Project from "../../components/project/Project";
 import { Link } from "react-router-dom";
 import React from "react";
 import FadeInSection from "../../components/effects/FadeInSection";
+import ScrolltoTop from "../../components/effects/ScrolltoTop";
+import GoToTop from "../../components/effects/ScrolltoTop";
 
 export default function About() {
   //great reference
@@ -36,8 +38,8 @@ export default function About() {
                   type="button"
                   class="btn btn-lg btn-outline-success mr-3"
                 >
-                  <a class href="#Projects">
-                    View Portfolio
+                  <a class href="#biographyTravel">
+                    View Bio
                   </a>
                 </button>
                 <button type="button" class="btn btn-lg btn-outline-success">
@@ -51,30 +53,30 @@ export default function About() {
         </div>
       </div>
 
-      <FadeInSection>
-        <div className="container biography">
-          <p>
-            Hi I’m Owen Peters, I’m an aspiring software engineer who loves to
-            solve problems, collaborate, and learn.
-            <br></br>
-            <br></br>I just graduated University of San Francisco and obtained
-            my Bachelors in Science degree for computer science.
-            <br></br>
-            <br></br>
-            Through experiences of past jobs and a passion for computers and
-            video games, I am pursuing a career in the software development
-            industry. Growing up with electronics my whole life, I have
-            developed a passion for everything computer related.
-            <br></br>
-            <br></br>I plan to continue to learn as much as I can about computer
-            science and the game development industry, and would love a career
-            that would welcome my eagerness, passion and tenacity to learn. Like
-            I mentioned, my hobbies include tinkering and building, diving deep
-            into the details of the electronic gaming industry, watching sports,
-            and eating good food.
-          </p>
-        </div>
-      </FadeInSection>
+      <a class="biographyTravel" id="biographyTravel"></a>
+
+      <div className="container biography">
+        <p>
+          I’m an aspiring software engineer & web developer who loves to solve
+          problems, collaborate, and learn.
+          <br></br>
+          <br></br>I just graduated from the University of San Francisco and
+          obtained my Bachelors in Science degree for computer science.
+          <br></br>
+          <br></br>
+          Through my experiences of past jobs and a passion for computers and
+          video games, I am pursuing a career in the software development
+          industry. Growing up with electronics, PCs, and gaming consoles my
+          whole life, I have developed a passion for everything computer
+          related. My hobbies include tinkering and building, diving deep into
+          the details of the electronic gaming industry, watching sports, and
+          eating good food.
+          <br></br>
+          <br></br>I plan to continue to learn as much as I can about software
+          engineering, web development, and the gaming industry. I would love a
+          career that would welcome my eagerness, passion and tenacity to learn.
+        </p>
+      </div>
 
       <hr class="rounded"></hr>
 
@@ -82,6 +84,7 @@ export default function About() {
       <div className="Projects" id="Projects">
         <Project></Project>
       </div>
+      {/* <GoToTop /> */}
     </div>
   );
 }

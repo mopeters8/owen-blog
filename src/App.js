@@ -11,6 +11,8 @@ import FadeInSection from "./components/effects/FadeInSection.jsx";
 import { BrowserRouter as Router, Routes, Link, Route } from "react-router-dom";
 import { Context } from "./context/Context";
 import About from "./pages/about/About.jsx";
+import GoToTop from "./components/effects/ScrolltoTop.jsx";
+
 import "./app.css";
 
 function App() {
@@ -32,6 +34,7 @@ function App() {
           />
           <Route path="/post/:postId" element={<Single />} />
         </Routes>
+        <GoToTop />
       </Router>
     </div>
   );
