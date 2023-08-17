@@ -80,7 +80,6 @@ export default function About() {
 
       <hr class="rounded"></hr>
 
-      <div className="bio">{/* <!-- emphasis on M and O --> */}</div>
       <div className="Projects" id="Projects">
         <Project></Project>
       </div>
