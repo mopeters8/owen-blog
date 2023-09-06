@@ -72,7 +72,7 @@
 
 .my_card .text {
   width: 80%;
-  margin: 0 auto;
+  // margin: 0 auto;
   font-size: 13px;
   text-align: center;
   margin-top: 20px;
@@ -87,30 +87,37 @@
 
 .my_card:hover {
    //not liking this.
-  height: 540px;
+  height: 600px;
+}
+
+.masterClass:hover {
+  height: 500px;
+}
+
+.searchEngine:hover {
+  height: 700px;
 }
 
 .my_card:hover .text {
   transition: all 0.5s ease;
   opacity: 1;
-//   max-height: 200px;
 }
 
-// .my_card .btn {
-//    width: 30%;
-//    // margin: 0 auto;
-//    text-align: center;
-//    margin-top: 15px;
-//    color: white;
-//    letter-spacing: 2px;
-//    opacity: 0;
-//    transition: all 0.5s ease;
-//  }
+.my_card .linkbtn {
+   width: 30%;
+   // margin: 0 auto;
+   text-align: center;
+   margin-top: 15px;
+   color: white;
+   letter-spacing: 2px;
+   opacity: 0;
+   transition: all 0.5s ease;
+ }
 
-// .my_card:hover .btn {
-//    transition: all 0.5s ease;
-//    opacity: 1;
-//  }
+.my_card:hover .linkbtn {
+   transition: all 0.5s ease;
+   opacity: 1;
+ }
 
 .my_card:hover .icon {
   margin-top: 30px;

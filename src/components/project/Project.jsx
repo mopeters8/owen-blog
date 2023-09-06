@@ -28,7 +28,7 @@ export default function Post({ post }) {
   return (
     <>
       <div class="content">
-        <div class="my_card">
+        <div class="my_card masterClass">
           <img
             // src="https://drive.google.com/file/d/1zNomPTUIzWK5bSJl4DjsY3dKvgXguphg/view?usp=sharing"
             src="https://drive.google.com/uc?export=view&id=1zNomPTUIzWK5bSJl4DjsY3dKvgXguphg"
@@ -105,17 +105,42 @@ export default function Post({ post }) {
           </div>
         </div>
 
-        <div class="my_card">
+        <div class="my_card searchEngine">
           <img
-            src="https://i.natgeofe.com/k/75ac774d-e6c7-44fa-b787-d0e20742f797/giant-panda-eating_4x3.jpg"
+            //https://drive.google.com/file/d/1J7zVUv1iAt3AVtrn_IcJObodgv7WNYK4/view?usp=sharing
+            src="https://drive.google.com/uc?export=view&id=1J7zVUv1iAt3AVtrn_IcJObodgv7WNYK4"
             alt="project picture"
           ></img>
-          <p class="title">Master Class Site</p>
+          <p class="title">Search Engine</p>
           <p class="text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
-            ducimus animi numquam earum sed aut voluptatum vel velit. Placeat
-            harum laboriosam iure sed assumenda sequi minima distinctio dolorum
-            ipsam magnam!
+            This search engine project uses a web crawler, and Jetty to provide
+            a web server and servlet container. This project contains a webpage
+            with a text box where users may enter a multi-word search query that
+            submits to a servlet in my search engine. It then matches the data
+            that is stored in the inverted index and returns the search results
+            of those queries as dynamically generated HTML with sorted and
+            clickable links.
+            <br></br>
+            <Link className="link" to="/">
+              <i class="icon fa-brands fa-github fa-2xl"></i>
+            </Link>
+          </p>
+        </div>
+        <div class="my_card">
+          {/* https://drive.google.com/file/d/1UzOXcy-cBQ-Shks8ziZvZtvXJrrdgEoJ/view?usp=sharing */}
+          <img
+            src="https://drive.google.com/uc?export=view&id=1UzOXcy-cBQ-Shks8ziZvZtvXJrrdgEoJ"
+            alt="project picture"
+          ></img>
+          <p class="title">Mo Money Manager</p>
+          <p class="text">
+            Using C# and the Microsoft .NET Framework, this Windows Form App is
+            a basic little mini money manager. Growing into adulthood forced
+            myself to juggle all sorts of purchases and financial responsibilty.
+            Forgetting to manage one's money can quickly disrupt a budget. This
+            WinFormApp helps manage any money received, as well as what you
+            spend it on while keeping track of a history, for improving one's
+            financial organization.
             <br></br>
             <Link className="link" to="/">
               <i class="icon fa-brands fa-github fa-2xl"></i>
@@ -124,15 +149,18 @@ export default function Post({ post }) {
         </div>
         <div class="my_card">
           <img
-            src="https://i.natgeofe.com/k/75ac774d-e6c7-44fa-b787-d0e20742f797/giant-panda-eating_4x3.jpg"
+            // https://drive.google.com/file/d/1SWg2Wc1SwBX5rmSY9kZgzANQtfD5tSLk/view?usp=sharing
+            src="https://drive.google.com/uc?export=view&id=1SWg2Wc1SwBX5rmSY9kZgzANQtfD5tSLk"
             alt="project picture"
           ></img>
-          <p class="title">Master Class Site</p>
+          <p class="title">Fatal Tide</p>
           <p class="text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
-            ducimus animi numquam earum sed aut voluptatum vel velit. Placeat
-            harum laboriosam iure sed assumenda sequi minima distinctio dolorum
-            ipsam magnam!
+            Through my employement at Girls Make Games, I was able to attain a
+            valuable skill set & understanding of Construct 3, a 2D game engine
+            to provide instruction to a remote class of students. Here we
+            created a 2D game called Fatal Tide, which featured enemy combat,
+            multiple levels, cutscenes and dialogue with working sound and
+            original music.
             <br></br>
             <Link className="link" to="/">
               <i class="icon fa-brands fa-github fa-2xl"></i>
@@ -141,15 +169,18 @@ export default function Post({ post }) {
         </div>
         <div class="my_card">
           <img
-            src="https://i.natgeofe.com/k/75ac774d-e6c7-44fa-b787-d0e20742f797/giant-panda-eating_4x3.jpg"
+            // https://drive.google.com/file/d/18i8YQxMqhnQIyr9swjJa435qr7MLx79S/view?usp=sharing
+            src="https://drive.google.com/uc?export=view&id=18i8YQxMqhnQIyr9swjJa435qr7MLx79S"
             alt="project picture"
           ></img>
-          <p class="title">Master Class Site</p>
+          <p class="title">Bash Shell</p>
           <p class="text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
-            ducimus animi numquam earum sed aut voluptatum vel velit. Placeat
-            harum laboriosam iure sed assumenda sequi minima distinctio dolorum
-            ipsam magnam!
+            Using C and Shell, this project is a shell that is able to take
+            commands and still execute them. This shell is able to function like
+            a normal one with commands, scripting, history list/navigation, IO
+            redirection, signal handling and more. It reads every command as a
+            half-virtualization method, so that we may look at the command and
+            interpret what we would like to do with it.
             <br></br>
             <Link className="link" to="/">
               <i class="icon fa-brands fa-github fa-2xl"></i>
@@ -158,32 +189,17 @@ export default function Post({ post }) {
         </div>
         <div class="my_card">
           <img
-            src="https://i.natgeofe.com/k/75ac774d-e6c7-44fa-b787-d0e20742f797/giant-panda-eating_4x3.jpg"
+            // https://drive.google.com/file/d/12TaR4NB8qdcEq_HbA614bjiY8qIeeWBY/view?usp=sharing
+            src="https://drive.google.com/uc?export=view&id=12TaR4NB8qdcEq_HbA614bjiY8qIeeWBY"
             alt="project picture"
           ></img>
-          <p class="title">Master Class Site</p>
+          <p class="title">Forum / Blog Website</p>
           <p class="text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
-            ducimus animi numquam earum sed aut voluptatum vel velit. Placeat
-            harum laboriosam iure sed assumenda sequi minima distinctio dolorum
-            ipsam magnam!
-            <br></br>
-            <Link className="link" to="/">
-              <i class="icon fa-brands fa-github fa-2xl"></i>
-            </Link>
-          </p>
-        </div>
-        <div class="my_card">
-          <img
-            src="https://i.natgeofe.com/k/75ac774d-e6c7-44fa-b787-d0e20742f797/giant-panda-eating_4x3.jpg"
-            alt="project picture"
-          ></img>
-          <p class="title">Master Class Site</p>
-          <p class="text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
-            ducimus animi numquam earum sed aut voluptatum vel velit. Placeat
-            harum laboriosam iure sed assumenda sequi minima distinctio dolorum
-            ipsam magnam!
+            Using what I have learned from University, along with what I have
+            practiced in my free time, I decided to create this website. Using
+            React, Node.js, MongoDB and other libraries and frameworks, I aimed
+            to create a forum that can host discussion and my portfolio for
+            others to see.
             <br></br>
             <Link className="link" to="/">
               <i class="icon fa-brands fa-github fa-2xl"></i>
