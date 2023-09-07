@@ -55,7 +55,7 @@ export default function About() {
 
       <a class="biographyTravel" id="biographyTravel"></a>
 
-      <div className="container biography">
+      <div className="container biography fadeIn-animation">
         <p>
           I’m an aspiring software engineer & web developer who loves to solve
           problems, collaborate, and learn.
@@ -80,7 +80,6 @@ export default function About() {
 
       <hr class="rounded"></hr>
 
-      <div className="bio">{/* <!-- emphasis on M and O --> */}</div>
       <div className="Projects" id="Projects">
         <Project></Project>
       </div>

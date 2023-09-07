@@ -5,10 +5,6 @@
   padding-top: 15px;
 }
 
-.container-xl {
-  margin-bottom: 600px;
-}
-
 /* Rounded border */
 hr.rounded {
   border-top: 4px solid grey;
@@ -24,6 +20,7 @@ a {
   position: relative;
   color: rgb(255, 226, 63);
   font-size: 25px;
+  margin-top: 20%;
   margin-bottom: 10%;
 }
 
@@ -105,6 +102,9 @@ a {
   0% {
     opacity: 0;
   }
+  66% {
+    opacity: 0;
+  }
   100% {
     opacity: 1;
   }
@@ -115,5 +115,5 @@ a {
 }
 
 .fadeIn-animation {
-  animation: 7s fadeIn;
+  animation: 4s fadeIn;
 }
