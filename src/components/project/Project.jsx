@@ -4,27 +4,6 @@ import { Link } from "react-router-dom";
 export default function Post({ post }) {
   const PF = "http://localhost:4000/images/";
 
-  //   return (
-  //     <div className="post">
-  //       {post.photo && <img className="postImg" src={PF + post.photo} alt="" />}
-
-  //       <div className="postInfo">
-  //         <div className="postCats">
-  //           {post.categories.map((c) => (
-  //             <span className="postCat">{c.name}</span>
-  //           ))}
-  //         </div>
-  //         <Link to={`/post/${post._id}`} className="link">
-  //           <span className="postTitle">{post.title}</span>
-  //         </Link>
-  //         <span className="postDate">
-  //           {new Date(post.createdAt).toDateString()}
-  //         </span>
-  //       </div>
-  //       <p className="postDesc">{post.desc}</p>
-  //     </div>
-  //   );
-
   return (
     <>
       <div class="content">
@@ -121,7 +100,10 @@ export default function Post({ post }) {
             of those queries as dynamically generated HTML with sorted and
             clickable links.
             <br></br>
-            <Link className="link" to="/">
+            <Link
+              className="link"
+              to="https://github.com/usf-cs212-spring2021/project-mopeters8"
+            >
               <i class="icon fa-brands fa-github fa-2xl"></i>
             </Link>
           </p>
@@ -142,7 +124,10 @@ export default function Post({ post }) {
             spend it on while keeping track of a history, for improving one's
             financial organization.
             <br></br>
-            <Link className="link" to="/">
+            <Link
+              className="link"
+              to="https://github.com/mopeters8/MoMoneyCsharp"
+            >
               <i class="icon fa-brands fa-github fa-2xl"></i>
             </Link>
           </p>
@@ -162,12 +147,15 @@ export default function Post({ post }) {
             multiple levels, cutscenes and dialogue with working sound and
             original music.
             <br></br>
-            <Link className="link" to="/">
+            <Link
+              className="link"
+              to="https://drive.google.com/file/d/1KcYc-KBGc_-sQj7dZHNMll50U2Bo-4lC/view?usp=sharing"
+            >
               <i class="icon fa-brands fa-github fa-2xl"></i>
             </Link>
           </p>
         </div>
-        <div class="my_card">
+        <div class="my_card smallCard">
           <img
             // https://drive.google.com/file/d/18i8YQxMqhnQIyr9swjJa435qr7MLx79S/view?usp=sharing
             src="https://drive.google.com/uc?export=view&id=18i8YQxMqhnQIyr9swjJa435qr7MLx79S"
@@ -182,12 +170,15 @@ export default function Post({ post }) {
             half-virtualization method, so that we may look at the command and
             interpret what we would like to do with it.
             <br></br>
-            <Link className="link" to="/">
+            <Link
+              className="link"
+              to="https://github.com/usf-cs326-fa22/P2-mopeters8"
+            >
               <i class="icon fa-brands fa-github fa-2xl"></i>
             </Link>
           </p>
         </div>
-        <div class="my_card">
+        <div class="my_card smallCard">
           <img
             // https://drive.google.com/file/d/12TaR4NB8qdcEq_HbA614bjiY8qIeeWBY/view?usp=sharing
             src="https://drive.google.com/uc?export=view&id=12TaR4NB8qdcEq_HbA614bjiY8qIeeWBY"
@@ -201,7 +192,7 @@ export default function Post({ post }) {
             to create a forum that can host discussion and my portfolio for
             others to see.
             <br></br>
-            <Link className="link" to="/">
+            <Link className="link" to="https://github.com/mopeters8/owen-blog">
               <i class="icon fa-brands fa-github fa-2xl"></i>
             </Link>
           </p>
